@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# Displays listening sockets with PID and program name
+# Displays all listening ports with PID and program name
 
-sudo lsof -i -P -n | grep LISTEN
+sudo netstat -tulnp | grep LISTEN
